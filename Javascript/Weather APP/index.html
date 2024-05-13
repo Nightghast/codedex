@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Haws Da Weh there?</h1>
+  </header>
+  <main>
+    <section id="weather-wrapper">
+        <h2>Weather App</h2>
+        <div id="weather-search">
+            <input id="search" type="text" placeholder="Search by city" />
+            <input id="submit" type="submit" onclick="fetchWeather()" value="Search" />
+        </div>
+        <div id="weather-data">
+            <img src="images/rain.png" clas="weather-icon">
+            <h3 class="temp">Temperature</h3>
+            <h3 class="city">City</h3>
+            <p>Description</p>
+            <div class="details">
+                <div class="cols">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">0%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="cols">
+                    <img src="images/wind.png">
+                    <div>
+                        <p class="wind">0 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+  </main>
+  <footer>
+    <p>Made with love by @Nightghast</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
