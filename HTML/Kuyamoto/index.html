@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kuyamoto</title>
+    <style>
+      body {
+      background-color: black;
+      color: white;
+      text-align: center
+      }
+      .header-nav {
+      text-align: right;
+      font-size: 20px;
+      background-color: #111;
+      padding: 0.1%;
+      }
+      li {
+      display: inline-block;
+      }
+      li a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: white;
+      }
+      article {
+      display: inline-block; /* Display articles inline */
+      vertical-align: top; /* Align articles vertically */
+      margin-right: 20px; /* Add spacing between articles */
+      }
+      #order-form{
+      background-color: white;
+      color: black;
+      padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>KUYAMOTO</h1>
+      <img width="500" src="https://images.squarespace-cdn.com/content/v1/5de65dd65719bc36391987ce/1575491645397-AIPGOGAVIMIVOYD2W64F/New+new.png">
+      <nav class="header-nav">
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order-form">Order Form</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="menu">
+        <h2>Menu</h2>
+        <article>
+          <img src="https://images.squarespace-cdn.com/content/v1/5de65dd65719bc36391987ce/1580922644352-7AWIRUVDHJQBZ1CZP75T/_MG_0041.jpg?format=500w" alt="Deep Fried Crab">
+          <h3>Deep fried soft shell crab</h3>
+          <p><i>£13.50</i></p>
+          <p>Crispy crab with chilli garlic salt served with truffle mayo</p>
+        </article>
+        <article>
+          <img src="https://images.squarespace-cdn.com/content/v1/5de65dd65719bc36391987ce/1580922646400-GXX08QSJG75E337DB9DL/_MG_0028.jpg?format=500w" alt="Nasuden">
+          <h3>Nasuden</h3>
+          <p><i>£7.90</i></p>
+          <p>Fried aubergine with saikyo miso, spring onions, fresh chilli and bonito flakes</p>
+        </article>
+        <article>
+          <img src="https://images.squarespace-cdn.com/content/v1/5de65dd65719bc36391987ce/1580922646644-4D1U4VJZXDY3UPEQ4SGU/_MG_0010.jpg?format=500w" alt="C Gyoza">
+          <h3>Chicken Gyoza</h3>
+          <p><i>£7.95</i></p>
+          <p>Japanese chicken dumpling served with umami soy</p>
+        </article>
+      </section>
+      <section id="order-form">
+        <h2 id="order-form">Order Form</h2>
+        <form>
+          <h3>Main Dish</h3>
+          <label>Deep fried soft shell crab: <input type="number" min=0 required></label><br><br>
+          <label>Nasuden: <input type="number" min=0 required></label><br><br>
+          <label>Chicken Gyoza: <input type="number" min=0 required></label>
+          <br><br>
+          <label>
+            <h3>Sides</h3>
+            <input type="checkbox"> Kimchi
+            <input type="checkbox"> Edamame
+            <input type="checkbox"> Misou Soup
+          </label><br><br>
+          <label>
+            <textarea rows=7 cols=35 placeholder="Enter Request">
+            </textarea>
+          </label><br><br>
+          <input type="submit" value="Go To Checkout"></label>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Made with love by @Nightghast</p>
+    </footer>
+  </body>
+</html>
